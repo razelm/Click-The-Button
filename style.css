@@ -1,0 +1,80 @@
+body {
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
+    background-color: rgb(31, 31, 31);
+}
+
+button {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    text-decoration: none;
+    background-color: rgb(31, 31, 31); 
+    border: 3px solid rgb(202, 202, 202); 
+    border-radius: 1em;
+    padding: 1em 2em;
+}
+
+ a {
+    text-decoration: none; 
+    color: rgb(202, 202, 202);
+}
+a:hover {
+    color: #fff;
+}
+.hover:hover {
+    transform: scale(50px);
+    animation: rainbow 2.5s linear;
+	animation-iteration-count: infinite;
+     filter:blur(50)
+}
+
+button:hover {
+     box-shadow: 0 0.5em 0.5em -0.4em;
+     transform: translateY(-0.35em);
+     transition: all 200ms ease-in-out;
+     cursor: pointer;
+     font-size: 45px;
+     background-color: rgba(128, 128, 128, 0.295);
+     
+}
+@keyframes rainbow{
+		100%,0%{
+			border-color: rgb(255, 83, 83);
+		}
+		8%{
+			border-color: rgb(255, 165, 76);
+		}
+		16%{
+			border-color: rgb(255, 255, 100);
+		}
+		25%{
+			border-color: rgb(178, 255, 101);
+		}
+		33%{
+			border-color: rgb(105, 255, 105);
+		}
+		41%{
+			border-color: rgb(95, 255, 175);
+		}
+		50%{
+			border-color: rgb(108, 255, 255);
+		}
+		58%{
+			border-color: rgb(88, 172, 255);
+		}
+		66%{
+			border-color: rgb(97, 97, 255);
+		}
+		75%{
+			border-color: rgb(177, 98, 255);
+		}
+		83%{
+			border-color: rgb(255, 101, 255);
+		}
+		91%{
+			border-color: rgb(255, 113, 184);
+		}
+    }
